@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Signup</title>
+</head>
+<body>
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+{% else %}
+  <p>You are not logged in</p>
+ 
+
+<a href="acc/logout">Logout</a>
+
+
+
+<li><a href="acc/signup">Signup</a></li>
+<li><a href="acc/login">Login</a></li>
+
+{% endif %}
+{% endblock %}
+</form>
+</body>
+</html>
